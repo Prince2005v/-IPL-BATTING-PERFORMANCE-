@@ -1,0 +1,965 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0819.2015                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='99fc0581324f4137c9c99bf70db10735372aadf4d0cc8aa343010e00e497a3e5' _.fcp.WorkbookFingerprinting.true...creator-author-id='99fc0581324f4137c9c99bf70db10735372aadf4d0cc8aa343010e00e497a3e5' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='3fce3c8c4dae5ebd608d688791a9c1da14995b11330027a5e5925d926d5363a7' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='3fce3c8c4dae5ebd608d688791a9c1da14995b11330027a5e5925d926d5363a7' original-version='18.1' source-build='2026.2.2 (20262.26.0819.2015)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <repository-location id='IPL_Batting_Analysis_twbx' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='top_batters' inline='true' name='federated.0t5dhsd1l8t3cn1aeytm41jkgokq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='top_batters' name='textscan.0rvi1xb0i9pdqa10lsqjo1dvn0vd'>
+            <connection class='textscan' directory='/Users/prince/Desktop/IPL Data analyst/data' filename='top_batters.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0rvi1xb0i9pdqa10lsqjo1dvn0vd' name='top_batters.csv' table='[top_batters#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='batter' ordinal='0' />
+            <column datatype='integer' name='total_runs' ordinal='1' />
+            <column datatype='integer' name='balls_faced' ordinal='2' />
+            <column datatype='integer' name='fours' ordinal='3' />
+            <column datatype='integer' name='sixes' ordinal='4' />
+            <column datatype='real' name='strike_rate' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[top_batters.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>batter</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[batter]</local-name>
+            <parent-name>[top_batters.csv]</parent-name>
+            <remote-alias>batter</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[top_batters.csv_D0CA52704FCF49E4A41A51C4BCE98CF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_runs]</local-name>
+            <parent-name>[top_batters.csv]</parent-name>
+            <remote-alias>total_runs</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[top_batters.csv_D0CA52704FCF49E4A41A51C4BCE98CF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>balls_faced</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[balls_faced]</local-name>
+            <parent-name>[top_batters.csv]</parent-name>
+            <remote-alias>balls_faced</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[top_batters.csv_D0CA52704FCF49E4A41A51C4BCE98CF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fours</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fours]</local-name>
+            <parent-name>[top_batters.csv]</parent-name>
+            <remote-alias>fours</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[top_batters.csv_D0CA52704FCF49E4A41A51C4BCE98CF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sixes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sixes]</local-name>
+            <parent-name>[top_batters.csv]</parent-name>
+            <remote-alias>sixes</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[top_batters.csv_D0CA52704FCF49E4A41A51C4BCE98CF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>strike_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[strike_rate]</local-name>
+            <parent-name>[top_batters.csv]</parent-name>
+            <remote-alias>strike_rate</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[top_batters.csv_D0CA52704FCF49E4A41A51C4BCE98CF7]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='top_batters.csv' datatype='table' name='[__tableau_internal_object_id__].[top_batters.csv_D0CA52704FCF49E4A41A51C4BCE98CF7]' role='measure' type='quantitative' />
+      <column caption='Balls Faced' datatype='integer' name='[balls_faced]' role='measure' type='quantitative' />
+      <column caption='Batter' datatype='string' name='[batter]' role='dimension' type='nominal' />
+      <column caption='Fours' datatype='integer' name='[fours]' role='measure' type='quantitative' />
+      <column caption='Sixes' datatype='integer' name='[sixes]' role='measure' type='quantitative' />
+      <column caption='Strike Rate' datatype='real' name='[strike_rate]' role='measure' type='quantitative' />
+      <column caption='Total Runs' datatype='integer' name='[total_runs]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/bf/nngs52_n1bn5vkpffb72630r0000gn/T/tableau-temp/#TableauTemp_1is1cfk0mnj8ud10sgzoz1nw3ruh.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/24/2026 06:12:53 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>batter</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[batter]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>batter</remote-alias>
+              <ordinal>0</ordinal>
+              <family>top_batters.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_runs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_runs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_runs</remote-alias>
+              <ordinal>1</ordinal>
+              <family>top_batters.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>balls_faced</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[balls_faced]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>balls_faced</remote-alias>
+              <ordinal>2</ordinal>
+              <family>top_batters.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fours</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[fours]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fours</remote-alias>
+              <ordinal>3</ordinal>
+              <family>top_batters.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sixes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sixes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sixes</remote-alias>
+              <ordinal>4</ordinal>
+              <family>top_batters.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>strike_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[strike_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>strike_rate</remote-alias>
+              <ordinal>5</ordinal>
+              <family>top_batters.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='top_batters.csv' id='top_batters.csv_D0CA52704FCF49E4A41A51C4BCE98CF7'>
+            <properties context=''>
+              <relation connection='textscan.0rvi1xb0i9pdqa10lsqjo1dvn0vd' name='top_batters.csv' table='[top_batters#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='batter' ordinal='0' />
+                  <column datatype='integer' name='total_runs' ordinal='1' />
+                  <column datatype='integer' name='balls_faced' ordinal='2' />
+                  <column datatype='integer' name='fours' ordinal='3' />
+                  <column datatype='integer' name='sixes' ordinal='4' />
+                  <column datatype='real' name='strike_rate' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='career_stats' inline='true' name='federated.0xjeoa61oemhs81fdrfje1xml04s' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='career_stats' name='textscan.1eqvow30buelm1174blmo0vflljc'>
+            <connection class='textscan' directory='/Users/prince/Desktop/IPL Data analyst/data' filename='career_stats.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1eqvow30buelm1174blmo0vflljc' name='career_stats.csv' table='[career_stats#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='batter' ordinal='0' />
+            <column datatype='integer' name='total_runs' ordinal='1' />
+            <column datatype='integer' name='balls_faced' ordinal='2' />
+            <column datatype='integer' name='fours' ordinal='3' />
+            <column datatype='integer' name='sixes' ordinal='4' />
+            <column datatype='real' name='strike_rate' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[career_stats.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>batter</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[batter]</local-name>
+            <parent-name>[career_stats.csv]</parent-name>
+            <remote-alias>batter</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[career_stats.csv_E316FD6A51B848F28F15E8A6963409D3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_runs]</local-name>
+            <parent-name>[career_stats.csv]</parent-name>
+            <remote-alias>total_runs</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[career_stats.csv_E316FD6A51B848F28F15E8A6963409D3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>balls_faced</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[balls_faced]</local-name>
+            <parent-name>[career_stats.csv]</parent-name>
+            <remote-alias>balls_faced</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[career_stats.csv_E316FD6A51B848F28F15E8A6963409D3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fours</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fours]</local-name>
+            <parent-name>[career_stats.csv]</parent-name>
+            <remote-alias>fours</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[career_stats.csv_E316FD6A51B848F28F15E8A6963409D3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sixes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sixes]</local-name>
+            <parent-name>[career_stats.csv]</parent-name>
+            <remote-alias>sixes</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[career_stats.csv_E316FD6A51B848F28F15E8A6963409D3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>strike_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[strike_rate]</local-name>
+            <parent-name>[career_stats.csv]</parent-name>
+            <remote-alias>strike_rate</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[career_stats.csv_E316FD6A51B848F28F15E8A6963409D3]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='career_stats.csv' datatype='table' name='[__tableau_internal_object_id__].[career_stats.csv_E316FD6A51B848F28F15E8A6963409D3]' role='measure' type='quantitative' />
+      <column caption='Balls Faced' datatype='integer' name='[balls_faced]' role='measure' type='quantitative' />
+      <column caption='Batter' datatype='string' name='[batter]' role='dimension' type='nominal' />
+      <column caption='Fours' datatype='integer' name='[fours]' role='measure' type='quantitative' />
+      <column caption='Sixes' datatype='integer' name='[sixes]' role='measure' type='quantitative' />
+      <column caption='Strike Rate' datatype='real' name='[strike_rate]' role='measure' type='quantitative' />
+      <column caption='Total Runs' datatype='integer' name='[total_runs]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/bf/nngs52_n1bn5vkpffb72630r0000gn/T/tableau-temp/#TableauTemp_0ycxg4k062qzci1csscg31erayjo.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/24/2026 06:16:50 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>batter</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[batter]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>batter</remote-alias>
+              <ordinal>0</ordinal>
+              <family>career_stats.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_runs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_runs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_runs</remote-alias>
+              <ordinal>1</ordinal>
+              <family>career_stats.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>balls_faced</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[balls_faced]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>balls_faced</remote-alias>
+              <ordinal>2</ordinal>
+              <family>career_stats.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fours</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[fours]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fours</remote-alias>
+              <ordinal>3</ordinal>
+              <family>career_stats.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sixes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sixes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sixes</remote-alias>
+              <ordinal>4</ordinal>
+              <family>career_stats.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>strike_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[strike_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>strike_rate</remote-alias>
+              <ordinal>5</ordinal>
+              <family>career_stats.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='career_stats.csv' id='career_stats.csv_E316FD6A51B848F28F15E8A6963409D3'>
+            <properties context=''>
+              <relation connection='textscan.1eqvow30buelm1174blmo0vflljc' name='career_stats.csv' table='[career_stats#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='batter' ordinal='0' />
+                  <column datatype='integer' name='total_runs' ordinal='1' />
+                  <column datatype='integer' name='balls_faced' ordinal='2' />
+                  <column datatype='integer' name='fours' ordinal='3' />
+                  <column datatype='integer' name='sixes' ordinal='4' />
+                  <column datatype='real' name='strike_rate' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='season_top_scorers' inline='true' name='federated.0zsoa4p0gdtb9d12a91nx0uiux4z' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='season_top_scorers' name='textscan.0r6wxy70xli63q10qabht1jgny7d'>
+            <connection class='textscan' directory='/Users/prince/Desktop/IPL Data analyst/data' filename='season_top_scorers.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0r6wxy70xli63q10qabht1jgny7d' name='season_top_scorers.csv' table='[season_top_scorers#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='season' ordinal='0' />
+            <column datatype='string' name='batter' ordinal='1' />
+            <column datatype='integer' name='total_runs' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[season_top_scorers.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[season]</local-name>
+            <parent-name>[season_top_scorers.csv]</parent-name>
+            <remote-alias>season</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[season_top_scorers.csv_8661FBCB96BE4E62838D0A7B90FD131F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>batter</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[batter]</local-name>
+            <parent-name>[season_top_scorers.csv]</parent-name>
+            <remote-alias>batter</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[season_top_scorers.csv_8661FBCB96BE4E62838D0A7B90FD131F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_runs]</local-name>
+            <parent-name>[season_top_scorers.csv]</parent-name>
+            <remote-alias>total_runs</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[season_top_scorers.csv_8661FBCB96BE4E62838D0A7B90FD131F]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='season_top_scorers.csv' datatype='table' name='[__tableau_internal_object_id__].[season_top_scorers.csv_8661FBCB96BE4E62838D0A7B90FD131F]' role='measure' type='quantitative' />
+      <column caption='Batter' datatype='string' name='[batter]' role='dimension' type='nominal' />
+      <column caption='Season' datatype='string' name='[season]' role='dimension' type='nominal' />
+      <column caption='Total Runs' datatype='integer' name='[total_runs]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/bf/nngs52_n1bn5vkpffb72630r0000gn/T/tableau-temp/#TableauTemp_1e63k0z0tau3g812fqbpa01ucbbb.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/24/2026 06:14:18 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>season</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[season]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>season</remote-alias>
+              <ordinal>0</ordinal>
+              <family>season_top_scorers.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[season_top_scorers.csv_8661FBCB96BE4E62838D0A7B90FD131F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>batter</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[batter]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>batter</remote-alias>
+              <ordinal>1</ordinal>
+              <family>season_top_scorers.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[season_top_scorers.csv_8661FBCB96BE4E62838D0A7B90FD131F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_runs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_runs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_runs</remote-alias>
+              <ordinal>2</ordinal>
+              <family>season_top_scorers.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[season_top_scorers.csv_8661FBCB96BE4E62838D0A7B90FD131F]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='season_top_scorers.csv' id='season_top_scorers.csv_8661FBCB96BE4E62838D0A7B90FD131F'>
+            <properties context=''>
+              <relation connection='textscan.0r6wxy70xli63q10qabht1jgny7d' name='season_top_scorers.csv' table='[season_top_scorers#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='season' ordinal='0' />
+                  <column datatype='string' name='batter' ordinal='1' />
+                  <column datatype='integer' name='total_runs' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Career Strike Rate'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='career_stats' name='federated.0xjeoa61oemhs81fdrfje1xml04s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xjeoa61oemhs81fdrfje1xml04s'>
+            <column caption='Batter' datatype='string' name='[batter]' role='dimension' type='nominal' />
+            <column-instance column='[batter]' derivation='None' name='[none:batter:nk]' pivot='key' type='nominal' />
+            <column caption='Strike Rate' datatype='real' name='[strike_rate]' role='measure' type='quantitative' />
+            <column-instance column='[strike_rate]' derivation='Sum' name='[sum:strike_rate:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0xjeoa61oemhs81fdrfje1xml04s].[none:batter:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([strike_rate])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:batter:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0xjeoa61oemhs81fdrfje1xml04s].[none:batter:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0xjeoa61oemhs81fdrfje1xml04s].[sum:strike_rate:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xjeoa61oemhs81fdrfje1xml04s].[none:batter:nk]</rows>
+        <cols>[federated.0xjeoa61oemhs81fdrfje1xml04s].[sum:strike_rate:qk]</cols>
+      </table>
+      <simple-id uuid='{01DDA5DF-9673-4753-A70B-B7648CF8EE7F}' />
+    </worksheet>
+    <worksheet name='Top 10 Run Scorers'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='top_batters' name='federated.0t5dhsd1l8t3cn1aeytm41jkgokq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0t5dhsd1l8t3cn1aeytm41jkgokq'>
+            <column caption='Batter' datatype='string' name='[batter]' role='dimension' type='nominal' />
+            <column-instance column='[batter]' derivation='None' name='[none:batter:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_runs]' derivation='Sum' name='[sum:total_runs:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Runs' datatype='integer' name='[total_runs]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0t5dhsd1l8t3cn1aeytm41jkgokq].[none:batter:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([total_runs])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:batter:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0t5dhsd1l8t3cn1aeytm41jkgokq].[none:batter:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0t5dhsd1l8t3cn1aeytm41jkgokq].[none:batter:nk]</rows>
+        <cols>[federated.0t5dhsd1l8t3cn1aeytm41jkgokq].[sum:total_runs:qk]</cols>
+      </table>
+      <simple-id uuid='{1962467B-997F-40A9-BD3A-7AE0E4A3F528}' />
+    </worksheet>
+    <worksheet name='Top Scorer by Season'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='season_top_scorers' name='federated.0zsoa4p0gdtb9d12a91nx0uiux4z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zsoa4p0gdtb9d12a91nx0uiux4z'>
+            <column caption='Batter' datatype='string' name='[batter]' role='dimension' type='nominal' />
+            <column-instance column='[batter]' derivation='None' name='[none:batter:nk]' pivot='key' type='nominal' />
+            <column-instance column='[season]' derivation='None' name='[none:season:nk]' pivot='key' type='nominal' />
+            <column caption='Season' datatype='string' name='[season]' role='dimension' type='nominal' />
+            <column-instance column='[total_runs]' derivation='Sum' name='[sum:total_runs:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Runs' datatype='integer' name='[total_runs]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0zsoa4p0gdtb9d12a91nx0uiux4z].[none:batter:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0zsoa4p0gdtb9d12a91nx0uiux4z].[none:season:nk]</rows>
+        <cols>[federated.0zsoa4p0gdtb9d12a91nx0uiux4z].[sum:total_runs:qk]</cols>
+      </table>
+      <simple-id uuid='{41FF9950-BBB2-43CB-87BF-B0F35635472A}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='IPL Batting Performance Analysis'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='8' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97940' id='16' param='vert' type-v2='layout-flow' w='98700' x='650' y='1030'>
+            <zone h='5406' id='17' type-v2='title' w='98700' x='650' y='1030'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92534' id='14' type-v2='layout-basic' w='98700' x='650' y='6436'>
+              <zone h='46266' id='9' name='Top 10 Run Scorers' w='49350' x='650' y='6436'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='46268' id='10' name='Career Strike Rate' w='98700' x='650' y='52702'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='46266' id='11' name='Top Scorer by Season' w='49350' x='50000' y='6436'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='19' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97940' id='18' param='vert' type-v2='layout-flow' w='98700' x='650' y='1030'>
+                <zone h='5406' id='17' type-v2='title' w='98700' x='650' y='1030'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46266' id='9' is-fixed='true' name='Top 10 Run Scorers' w='49350' x='650' y='6436'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46266' id='11' is-fixed='true' name='Top Scorer by Season' w='49350' x='50000' y='6436'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46268' id='10' is-fixed='true' name='Career Strike Rate' w='98700' x='650' y='52702'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{149A1D05-C069-43C4-8D22-59FC75098EC6}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='72'>
+    <window class='worksheet' name='Top 10 Run Scorers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{70D1A905-B169-488F-BD89-C409ADABDB59}' />
+    </window>
+    <window class='worksheet' name='Top Scorer by Season'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{47F6A09A-B1D9-4C25-9094-48D21E0983BA}' />
+    </window>
+    <window class='worksheet' name='Career Strike Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1AF260FF-726E-48C5-8494-705C3CABF1B6}' />
+    </window>
+    <window class='dashboard' maximized='true' name='IPL Batting Performance Analysis'>
+      <viewpoints>
+        <viewpoint name='Career Strike Rate'>
+          <zoom type='fit-height' />
+        </viewpoint>
+        <viewpoint name='Top 10 Run Scorers'>
+          <zoom type='fit-height' />
+        </viewpoint>
+        <viewpoint name='Top Scorer by Season'>
+          <zoom type='fit-height' />
+        </viewpoint>
+      </viewpoints>
+      <active id='11' />
+      <device-preview visible='true' />
+      <simple-id uuid='{27CD0008-5BFB-4DA6-BDEF-F37729B5C863}' />
+    </window>
+  </windows>
+</workbook>

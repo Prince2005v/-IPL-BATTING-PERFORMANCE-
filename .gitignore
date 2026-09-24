@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# SQLite database
+data/ipl.db
+
+# Raw dataset / archives
+*.zip
+*.json
+
+# OS
+.DS_Store
+
+# Tableau temporary files
+*.tmp
